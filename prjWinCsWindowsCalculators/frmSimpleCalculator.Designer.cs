@@ -60,8 +60,8 @@ namespace prjWinCsWindowsCalculators
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtResult = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblVisor = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnEqual
@@ -175,6 +175,7 @@ namespace prjWinCsWindowsCalculators
             this.btnThree.TabIndex = 88;
             this.btnThree.Text = "3";
             this.btnThree.UseVisualStyleBackColor = false;
+            this.btnThree.Click += new System.EventHandler(this.btnThree_Click);
             // 
             // btnOneDivided
             // 
@@ -260,6 +261,7 @@ namespace prjWinCsWindowsCalculators
             this.btntwo.TabIndex = 82;
             this.btntwo.Text = "2";
             this.btntwo.UseVisualStyleBackColor = false;
+            this.btntwo.Click += new System.EventHandler(this.btntwo_Click);
             // 
             // btnFive
             // 
@@ -274,6 +276,7 @@ namespace prjWinCsWindowsCalculators
             this.btnFive.TabIndex = 81;
             this.btnFive.Text = "5";
             this.btnFive.UseVisualStyleBackColor = false;
+            this.btnFive.Click += new System.EventHandler(this.btnFive_Click);
             // 
             // btnEigth
             // 
@@ -288,6 +291,7 @@ namespace prjWinCsWindowsCalculators
             this.btnEigth.TabIndex = 80;
             this.btnEigth.Text = "8";
             this.btnEigth.UseVisualStyleBackColor = false;
+            this.btnEigth.Click += new System.EventHandler(this.btnEigth_Click);
             // 
             // btnSeven
             // 
@@ -346,6 +350,7 @@ namespace prjWinCsWindowsCalculators
             this.btnOne.TabIndex = 76;
             this.btnOne.Text = "1";
             this.btnOne.UseVisualStyleBackColor = false;
+            this.btnOne.Click += new System.EventHandler(this.btnOne_Click);
             // 
             // btnFour
             // 
@@ -360,6 +365,7 @@ namespace prjWinCsWindowsCalculators
             this.btnFour.TabIndex = 75;
             this.btnFour.Text = "4";
             this.btnFour.UseVisualStyleBackColor = false;
+            this.btnFour.Click += new System.EventHandler(this.btnFour_Click);
             // 
             // btnNine
             // 
@@ -374,6 +380,7 @@ namespace prjWinCsWindowsCalculators
             this.btnNine.TabIndex = 74;
             this.btnNine.Text = "9";
             this.btnNine.UseVisualStyleBackColor = false;
+            this.btnNine.Click += new System.EventHandler(this.btnNine_Click);
             // 
             // btnSix
             // 
@@ -466,20 +473,6 @@ namespace prjWinCsWindowsCalculators
             this.label2.TabIndex = 66;
             this.label2.Text = "MC";
             // 
-            // txtResult
-            // 
-            this.txtResult.BackColor = System.Drawing.Color.Silver;
-            this.txtResult.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtResult.Enabled = false;
-            this.txtResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResult.Location = new System.Drawing.Point(34, 74);
-            this.txtResult.Name = "txtResult";
-            this.txtResult.ReadOnly = true;
-            this.txtResult.Size = new System.Drawing.Size(483, 68);
-            this.txtResult.TabIndex = 65;
-            this.txtResult.Text = "0";
-            this.txtResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -491,12 +484,24 @@ namespace prjWinCsWindowsCalculators
             this.label1.TabIndex = 64;
             this.label1.Text = "Standart";
             // 
+            // lblVisor
+            // 
+            this.lblVisor.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVisor.Location = new System.Drawing.Point(23, 92);
+            this.lblVisor.Name = "lblVisor";
+            this.lblVisor.Size = new System.Drawing.Size(503, 63);
+            this.lblVisor.TabIndex = 96;
+            this.lblVisor.Text = "0";
+            this.lblVisor.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.lblVisor.Click += new System.EventHandler(this.label8_Click);
+            // 
             // frmSimpleCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(545, 646);
+            this.Controls.Add(this.lblVisor);
             this.Controls.Add(this.btnEqual);
             this.Controls.Add(this.btnAdition);
             this.Controls.Add(this.btnSubstraction);
@@ -527,7 +532,6 @@ namespace prjWinCsWindowsCalculators
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtResult);
             this.Controls.Add(this.label1);
             this.Name = "frmSimpleCalculator";
             this.Text = "frmSimpleCalculator";
@@ -568,7 +572,7 @@ namespace prjWinCsWindowsCalculators
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtResult;
         private System.Windows.Forms.Label label1;
+        private Label lblVisor;
     }
 }

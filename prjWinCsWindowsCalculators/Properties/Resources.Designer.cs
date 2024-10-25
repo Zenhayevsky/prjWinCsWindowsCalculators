@@ -63,36 +63,6 @@ namespace prjWinCsWindowsCalculators.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap background_calculator {
-            get {
-                object obj = ResourceManager.GetObject("background_calculator", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap backgroupPhoto {
-            get {
-                object obj = ResourceManager.GetObject("backgroupPhoto", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap backgroupPhoto1 {
-            get {
-                object obj = ResourceManager.GetObject("backgroupPhoto1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap third {
             get {
                 object obj = ResourceManager.GetObject("third", resourceCulture);

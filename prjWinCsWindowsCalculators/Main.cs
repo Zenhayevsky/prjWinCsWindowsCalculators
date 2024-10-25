@@ -10,14 +10,29 @@ using System.Windows.Forms;
 
 namespace prjWinCsWindowsCalculators
 {
-    public partial class Main : Form
+    public partial class main : Form
     {
-        public Main()
+        public main()
         {
             InitializeComponent();
         }
 
-        private void startProgramToolStripMenuItem_Click(object sender, EventArgs e)
+        private void programsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void main_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void viToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolNToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
@@ -27,7 +42,7 @@ namespace prjWinCsWindowsCalculators
 
         }
 
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
         {
 
         }
