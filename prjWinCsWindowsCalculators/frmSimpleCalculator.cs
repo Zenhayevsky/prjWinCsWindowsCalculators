@@ -63,7 +63,7 @@ namespace prjWinCsWindowsCalculators
                 firstNumberActive = false;
                 secondNumberActive = true;
                 lblVisor.Text = "0";
-                lblOperation.Text = operation + result.ToString();
+                lblOperation.Text = operation + firstNumber.ToString();
             }
             //  Case: we have first numebr setted and second number watting to be filled
             else if (firstNumberActive && secondNumber == 0)
@@ -71,7 +71,7 @@ namespace prjWinCsWindowsCalculators
                 firstNumberActive = false;
                 secondNumberActive = true;
                 lblVisor.Text = "0";
-
+                lblOperation.Text = operation + firstNumber.ToString();
             }
             // Case: we want to some*** more than just 2 numbers.
             // *** additioning or subtracting or multiplication or division, etc...
@@ -125,6 +125,7 @@ namespace prjWinCsWindowsCalculators
             lblVisor.Text = result.ToString();
             secondNumberActive = false;
             firstNumberActive = true;
+            lblOperation.Text = secondNumber.ToString() + lblOperation.Text;
 
         }
 
@@ -185,6 +186,7 @@ namespace prjWinCsWindowsCalculators
             number = "0";
             adittion = substraction = multiplication = porcentage = squareRoot = division = square = inverse = false;
             lblVisor.Text = "0";
+            lblOperation.Text = "";
         }
 
         private void btnZero_Click(object sender, EventArgs e)
