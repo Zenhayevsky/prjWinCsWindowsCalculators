@@ -32,26 +32,28 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.startProgramToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.programsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.simpleCalulatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cientificCalculatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exchangeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitProgramToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +66,7 @@
             this.helpToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(921, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -75,9 +77,42 @@
             this.exchangeToolStripMenuItem,
             this.quitProgramToolStripMenuItem});
             this.startProgramToolStripMenuItem.Name = "startProgramToolStripMenuItem";
-            this.startProgramToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.startProgramToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
             this.startProgramToolStripMenuItem.Text = "Programs";
             this.startProgramToolStripMenuItem.Click += new System.EventHandler(this.startProgramToolStripMenuItem_Click);
+            // 
+            // programsToolStripMenuItem
+            // 
+            this.programsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.simpleCalulatorToolStripMenuItem,
+            this.cientificCalculatorToolStripMenuItem});
+            this.programsToolStripMenuItem.Name = "programsToolStripMenuItem";
+            this.programsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.programsToolStripMenuItem.Text = "Programs";
+            // 
+            // simpleCalulatorToolStripMenuItem
+            // 
+            this.simpleCalulatorToolStripMenuItem.Name = "simpleCalulatorToolStripMenuItem";
+            this.simpleCalulatorToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
+            this.simpleCalulatorToolStripMenuItem.Text = "Simple Calulator";
+            // 
+            // cientificCalculatorToolStripMenuItem
+            // 
+            this.cientificCalculatorToolStripMenuItem.Name = "cientificCalculatorToolStripMenuItem";
+            this.cientificCalculatorToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
+            this.cientificCalculatorToolStripMenuItem.Text = "Cientific Calculator";
+            // 
+            // exchangeToolStripMenuItem
+            // 
+            this.exchangeToolStripMenuItem.Name = "exchangeToolStripMenuItem";
+            this.exchangeToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.exchangeToolStripMenuItem.Text = "Exchange";
+            // 
+            // quitProgramToolStripMenuItem
+            // 
+            this.quitProgramToolStripMenuItem.Name = "quitProgramToolStripMenuItem";
+            this.quitProgramToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.quitProgramToolStripMenuItem.Text = "Quit Program";
             // 
             // helpToolStripMenuItem
             // 
@@ -94,6 +129,12 @@
             this.helpToolStripMenuItem1.Size = new System.Drawing.Size(55, 24);
             this.helpToolStripMenuItem1.Text = "Help";
             // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
+            this.aboutToolStripMenuItem.Text = "About";
+            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -105,9 +146,9 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 424);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 562);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 26);
+            this.statusStrip1.Size = new System.Drawing.Size(921, 26);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -126,9 +167,19 @@
             this.toolStripButton3});
             this.toolStrip1.Location = new System.Drawing.Point(0, 28);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(800, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(921, 27);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::prjWinCsWindowsCalculators.Properties.Resources.third;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 111);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(921, 393);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // toolStripButton1
             // 
@@ -157,51 +208,13 @@
             this.toolStripButton3.Size = new System.Drawing.Size(29, 24);
             this.toolStripButton3.Text = "toolStripButton3";
             // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.aboutToolStripMenuItem.Text = "About";
-            // 
-            // programsToolStripMenuItem
-            // 
-            this.programsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.simpleCalulatorToolStripMenuItem,
-            this.cientificCalculatorToolStripMenuItem});
-            this.programsToolStripMenuItem.Name = "programsToolStripMenuItem";
-            this.programsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.programsToolStripMenuItem.Text = "Programs";
-            // 
-            // simpleCalulatorToolStripMenuItem
-            // 
-            this.simpleCalulatorToolStripMenuItem.Name = "simpleCalulatorToolStripMenuItem";
-            this.simpleCalulatorToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.simpleCalulatorToolStripMenuItem.Text = "Simple Calulator";
-            // 
-            // cientificCalculatorToolStripMenuItem
-            // 
-            this.cientificCalculatorToolStripMenuItem.Name = "cientificCalculatorToolStripMenuItem";
-            this.cientificCalculatorToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.cientificCalculatorToolStripMenuItem.Text = "Cientific Calculator";
-            // 
-            // exchangeToolStripMenuItem
-            // 
-            this.exchangeToolStripMenuItem.Name = "exchangeToolStripMenuItem";
-            this.exchangeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.exchangeToolStripMenuItem.Text = "Exchange";
-            // 
-            // quitProgramToolStripMenuItem
-            // 
-            this.quitProgramToolStripMenuItem.Name = "quitProgramToolStripMenuItem";
-            this.quitProgramToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.quitProgramToolStripMenuItem.Text = "Quit Program";
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(921, 588);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -214,6 +227,7 @@
             this.statusStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -241,5 +255,6 @@
         private System.Windows.Forms.ToolStripMenuItem quitProgramToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
