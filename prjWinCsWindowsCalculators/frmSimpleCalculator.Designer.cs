@@ -38,10 +38,9 @@ namespace prjWinCsWindowsCalculators
             this.btnClear = new System.Windows.Forms.Button();
             this.btnDot = new System.Windows.Forms.Button();
             this.btnThree = new System.Windows.Forms.Button();
-            this.btnOneDivided = new System.Windows.Forms.Button();
-            this.btnXelavatedToTwo = new System.Windows.Forms.Button();
+            this.btnInverse = new System.Windows.Forms.Button();
+            this.btSquare = new System.Windows.Forms.Button();
             this.btnSquareRoot = new System.Windows.Forms.Button();
-            this.btnC = new System.Windows.Forms.Button();
             this.btnZero = new System.Windows.Forms.Button();
             this.btntwo = new System.Windows.Forms.Button();
             this.btnFive = new System.Windows.Forms.Button();
@@ -62,6 +61,8 @@ namespace prjWinCsWindowsCalculators
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblVisor = new System.Windows.Forms.Label();
+            this.lblOperation = new System.Windows.Forms.Label();
+            this.btnC_Reset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnEqual
@@ -77,6 +78,7 @@ namespace prjWinCsWindowsCalculators
             this.btnEqual.TabIndex = 95;
             this.btnEqual.Text = "=";
             this.btnEqual.UseVisualStyleBackColor = false;
+            this.btnEqual.Click += new System.EventHandler(this.btnEqual_Click);
             // 
             // btnAdition
             // 
@@ -91,6 +93,7 @@ namespace prjWinCsWindowsCalculators
             this.btnAdition.TabIndex = 94;
             this.btnAdition.Text = "+";
             this.btnAdition.UseVisualStyleBackColor = false;
+            this.btnAdition.Click += new System.EventHandler(this.btnAdition_Click);
             // 
             // btnSubstraction
             // 
@@ -105,6 +108,7 @@ namespace prjWinCsWindowsCalculators
             this.btnSubstraction.TabIndex = 93;
             this.btnSubstraction.Text = "-";
             this.btnSubstraction.UseVisualStyleBackColor = false;
+            this.btnSubstraction.Click += new System.EventHandler(this.btnSubstraction_Click);
             // 
             // btnMultiplication
             // 
@@ -119,6 +123,7 @@ namespace prjWinCsWindowsCalculators
             this.btnMultiplication.TabIndex = 92;
             this.btnMultiplication.Text = "x";
             this.btnMultiplication.UseVisualStyleBackColor = false;
+            this.btnMultiplication.Click += new System.EventHandler(this.btnMultiplication_Click);
             // 
             // btnDivision
             // 
@@ -133,6 +138,7 @@ namespace prjWinCsWindowsCalculators
             this.btnDivision.TabIndex = 91;
             this.btnDivision.Text = "÷";
             this.btnDivision.UseVisualStyleBackColor = false;
+            this.btnDivision.Click += new System.EventHandler(this.btnDivision_Click);
             // 
             // btnClear
             // 
@@ -147,6 +153,7 @@ namespace prjWinCsWindowsCalculators
             this.btnClear.TabIndex = 90;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnDot
             // 
@@ -177,33 +184,35 @@ namespace prjWinCsWindowsCalculators
             this.btnThree.UseVisualStyleBackColor = false;
             this.btnThree.Click += new System.EventHandler(this.btnThree_Click);
             // 
-            // btnOneDivided
+            // btnInverse
             // 
-            this.btnOneDivided.BackColor = System.Drawing.Color.LightGray;
-            this.btnOneDivided.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOneDivided.FlatAppearance.BorderSize = 0;
-            this.btnOneDivided.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOneDivided.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOneDivided.Location = new System.Drawing.Point(25, 292);
-            this.btnOneDivided.Name = "btnOneDivided";
-            this.btnOneDivided.Size = new System.Drawing.Size(123, 67);
-            this.btnOneDivided.TabIndex = 87;
-            this.btnOneDivided.Text = "1/x";
-            this.btnOneDivided.UseVisualStyleBackColor = false;
+            this.btnInverse.BackColor = System.Drawing.Color.LightGray;
+            this.btnInverse.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInverse.FlatAppearance.BorderSize = 0;
+            this.btnInverse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInverse.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInverse.Location = new System.Drawing.Point(25, 292);
+            this.btnInverse.Name = "btnInverse";
+            this.btnInverse.Size = new System.Drawing.Size(123, 67);
+            this.btnInverse.TabIndex = 87;
+            this.btnInverse.Text = "1/x";
+            this.btnInverse.UseVisualStyleBackColor = false;
+            this.btnInverse.Click += new System.EventHandler(this.btnInverse_Click);
             // 
-            // btnXelavatedToTwo
+            // btSquare
             // 
-            this.btnXelavatedToTwo.BackColor = System.Drawing.Color.LightGray;
-            this.btnXelavatedToTwo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXelavatedToTwo.FlatAppearance.BorderSize = 0;
-            this.btnXelavatedToTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXelavatedToTwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXelavatedToTwo.Location = new System.Drawing.Point(151, 292);
-            this.btnXelavatedToTwo.Name = "btnXelavatedToTwo";
-            this.btnXelavatedToTwo.Size = new System.Drawing.Size(123, 67);
-            this.btnXelavatedToTwo.TabIndex = 86;
-            this.btnXelavatedToTwo.Text = "x²";
-            this.btnXelavatedToTwo.UseVisualStyleBackColor = false;
+            this.btSquare.BackColor = System.Drawing.Color.LightGray;
+            this.btSquare.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btSquare.FlatAppearance.BorderSize = 0;
+            this.btSquare.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btSquare.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSquare.Location = new System.Drawing.Point(151, 292);
+            this.btSquare.Name = "btSquare";
+            this.btSquare.Size = new System.Drawing.Size(123, 67);
+            this.btSquare.TabIndex = 86;
+            this.btSquare.Text = "x²";
+            this.btSquare.UseVisualStyleBackColor = false;
+            this.btSquare.Click += new System.EventHandler(this.btnSquare_Click);
             // 
             // btnSquareRoot
             // 
@@ -218,21 +227,7 @@ namespace prjWinCsWindowsCalculators
             this.btnSquareRoot.TabIndex = 85;
             this.btnSquareRoot.Text = "²√x";
             this.btnSquareRoot.UseVisualStyleBackColor = false;
-            // 
-            // btnC
-            // 
-            this.btnC.BackColor = System.Drawing.Color.LightGray;
-            this.btnC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnC.FlatAppearance.BorderSize = 0;
-            this.btnC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnC.Location = new System.Drawing.Point(277, 222);
-            this.btnC.Name = "btnC";
-            this.btnC.Size = new System.Drawing.Size(123, 67);
-            this.btnC.TabIndex = 84;
-            this.btnC.Text = "C";
-            this.btnC.UseVisualStyleBackColor = false;
-            this.btnC.Click += new System.EventHandler(this.button13_Click);
+            this.btnSquareRoot.Click += new System.EventHandler(this.btnSquareRoot_Click);
             // 
             // btnZero
             // 
@@ -247,6 +242,7 @@ namespace prjWinCsWindowsCalculators
             this.btnZero.TabIndex = 83;
             this.btnZero.Text = "0";
             this.btnZero.UseVisualStyleBackColor = false;
+            this.btnZero.Click += new System.EventHandler(this.btnZero_Click);
             // 
             // btntwo
             // 
@@ -495,12 +491,41 @@ namespace prjWinCsWindowsCalculators
             this.lblVisor.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.lblVisor.Click += new System.EventHandler(this.label8_Click);
             // 
+            // lblOperation
+            // 
+            this.lblOperation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOperation.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblOperation.Location = new System.Drawing.Point(25, 57);
+            this.lblOperation.Name = "lblOperation";
+            this.lblOperation.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.lblOperation.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOperation.Size = new System.Drawing.Size(501, 35);
+            this.lblOperation.TabIndex = 97;
+            this.lblOperation.Click += new System.EventHandler(this.lblOperation_Click);
+            // 
+            // btnC_Reset
+            // 
+            this.btnC_Reset.BackColor = System.Drawing.Color.LightGray;
+            this.btnC_Reset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnC_Reset.FlatAppearance.BorderSize = 0;
+            this.btnC_Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnC_Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnC_Reset.Location = new System.Drawing.Point(277, 222);
+            this.btnC_Reset.Name = "btnC_Reset";
+            this.btnC_Reset.Size = new System.Drawing.Size(123, 67);
+            this.btnC_Reset.TabIndex = 98;
+            this.btnC_Reset.Text = "C";
+            this.btnC_Reset.UseVisualStyleBackColor = false;
+            this.btnC_Reset.Click += new System.EventHandler(this.btnC_Rese_Click);
+            // 
             // frmSimpleCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(545, 646);
+            this.Controls.Add(this.btnC_Reset);
+            this.Controls.Add(this.lblOperation);
             this.Controls.Add(this.lblVisor);
             this.Controls.Add(this.btnEqual);
             this.Controls.Add(this.btnAdition);
@@ -510,10 +535,9 @@ namespace prjWinCsWindowsCalculators
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnDot);
             this.Controls.Add(this.btnThree);
-            this.Controls.Add(this.btnOneDivided);
-            this.Controls.Add(this.btnXelavatedToTwo);
+            this.Controls.Add(this.btnInverse);
+            this.Controls.Add(this.btSquare);
             this.Controls.Add(this.btnSquareRoot);
-            this.Controls.Add(this.btnC);
             this.Controls.Add(this.btnZero);
             this.Controls.Add(this.btntwo);
             this.Controls.Add(this.btnFive);
@@ -550,10 +574,9 @@ namespace prjWinCsWindowsCalculators
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnDot;
         private System.Windows.Forms.Button btnThree;
-        private System.Windows.Forms.Button btnOneDivided;
-        private System.Windows.Forms.Button btnXelavatedToTwo;
+        private System.Windows.Forms.Button btnInverse;
+        private System.Windows.Forms.Button btSquare;
         private System.Windows.Forms.Button btnSquareRoot;
-        private System.Windows.Forms.Button btnC;
         private System.Windows.Forms.Button btnZero;
         private System.Windows.Forms.Button btntwo;
         private System.Windows.Forms.Button btnFive;
@@ -574,5 +597,7 @@ namespace prjWinCsWindowsCalculators
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Label lblVisor;
+        private Label lblOperation;
+        private Button btnC_Reset;
     }
 }

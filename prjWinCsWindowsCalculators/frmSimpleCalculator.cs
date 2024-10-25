@@ -18,7 +18,7 @@ namespace prjWinCsWindowsCalculators
         }
 
         double firstNumber, secondNumber, result;
-        bool adittion, substraction, multiplication, divisiion, porcentage, square, squareRoot, inverse, secondNumberActive;
+        bool adittion, substraction, multiplication, division, porcentage, square, squareRoot, inverse, secondNumberActive, resultActive;
 
         private void btntwo_Click(object sender, EventArgs e)
         {
@@ -48,6 +48,191 @@ namespace prjWinCsWindowsCalculators
         private void btnNine_Click(object sender, EventArgs e)
         {
             insertNumber("9");
+        }
+
+        private void operationToMake (String operation)
+        {
+            //Case: We already operated an operation before (pressed btnResult) so, seconNumber is filled and now, we want to continue the
+            //operation *** additioning or subtracting or multiplication or division, etc...*** 
+            // and make que last result the firstnumber and the next numbers to insert be the sencond number for the operation.
+            if (firstNumberActive && secondNumber != 0)
+            {
+                firstNumber = result;
+                result = 0;
+                secondNumber = 0;
+                firstNumberActive = false;
+                secondNumberActive = true;
+                lblVisor.Text = "0";
+                lblOperation.Text = operation + result.ToString();
+            }
+            //  Case: we have first numebr setted and second number watting to be filled
+            else if (firstNumberActive && secondNumber == 0)
+            {
+                firstNumberActive = false;
+                secondNumberActive = true;
+                lblVisor.Text = "0";
+
+            }
+            // Case: we want to some*** more than just 2 numbers.
+            // *** additioning or subtracting or multiplication or division, etc...
+            else if (secondNumberActive && firstNumber != 0)
+            {
+                firstNumber = firstNumber + secondNumber;
+                secondNumber = 0;
+                lblVisor.Text = "0";
+            }
+        }
+
+        private void btnAdition_Click(object sender, EventArgs e)
+        {
+            operationToMake(" + ");
+            adittion = true;
+            substraction = multiplication = division = porcentage = square = squareRoot = inverse = false;
+        }
+
+        private void btnEqual_Click(object sender, EventArgs e)
+        {
+
+            if (adittion)
+            {
+                result = firstNumber + secondNumber;
+            }
+            else if (substraction)
+            {
+                result = firstNumber - secondNumber;
+            }
+            else if (multiplication)
+            {
+                result = firstNumber * secondNumber;
+            }
+            else if (division)
+            {
+                result = firstNumber / secondNumber;
+            }
+            /*else if (square)
+            {
+                result = firstName^2;
+            }
+            else if (squareRoot)
+            {
+                result = firstNumer^(1/2);
+            }
+            else if (inverse)
+            {
+                result = 1 / firstNumber;
+            }*/
+
+            lblVisor.Text = result.ToString();
+            secondNumberActive = false;
+            firstNumberActive = true;
+
+        }
+
+        private void lblOperation_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSubstraction_Click(object sender, EventArgs e)
+        {
+            operationToMake(" - ");
+            substraction = true;
+            adittion = multiplication = division = porcentage = square = squareRoot = inverse = false;
+        }
+
+        private void btnMultiplication_Click(object sender, EventArgs e)
+        {
+            operationToMake(" * ");
+            multiplication = true;
+            adittion = substraction = division = porcentage = square = squareRoot = inverse = false;
+        }
+
+        private void btnDivision_Click(object sender, EventArgs e)
+        {
+            operationToMake(" / ");
+            division = true;
+            adittion = substraction = multiplication = porcentage = square = squareRoot = inverse = false;
+        }
+
+        private void btnSquareRoot_Click(object sender, EventArgs e)
+        {
+            operationToMake(" ²√ ");
+            squareRoot = true;
+            adittion = substraction = multiplication = porcentage = square = division = inverse = false;
+        }
+
+        private void btnSquare_Click(object sender, EventArgs e)
+        {
+            operationToMake(" x² ");
+            square = true;
+            adittion = substraction = multiplication = porcentage = squareRoot = division = inverse = false;
+        }
+
+        private void btnInverse_Click(object sender, EventArgs e)
+        {
+            operationToMake(" 1/ ");
+            inverse = true;
+            adittion = substraction = multiplication = porcentage = squareRoot = division = square = false;
+        }
+
+        private void btnC_Rese_Click(object sender, EventArgs e)
+        {
+            firstNumber = 0;
+            secondNumber = 0;
+            secondNumberActive = false;
+            firstNumberActive = true;
+            result = 0;
+            number = "0";
+            adittion = substraction = multiplication = porcentage = squareRoot = division = square = inverse = false;
+            lblVisor.Text = "0";
+        }
+
+        private void btnZero_Click(object sender, EventArgs e)
+        {
+            insertNumber("0");
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+
+
+            if (resultActive && firstNumberActive)
+            {
+                return;
+            }
+            else if (double.Parse(lblVisor.Text) == firstNumber && firstNumberActive)
+            {
+                int totalSize = firstNumber.ToString().Length;
+
+                if (totalSize > 1)
+                {
+                    number = firstNumber.ToString().Substring(0, totalSize - 1);
+                    firstNumber = double.Parse(number);
+                    lblVisor.Text = number.ToString();
+                }
+                else
+                {
+                    firstNumber = 0;
+                    lblVisor.Text = "0";
+                }
+            }
+            else if (double.Parse(lblVisor.Text) == secondNumber && secondNumberActive)
+            {
+                int totalSize = secondNumber.ToString().Length;
+
+                if (totalSize > 1)
+                {
+                    number = secondNumber.ToString().Substring(0, totalSize - 1);
+                    secondNumber = double.Parse(number);
+                    lblVisor.Text = number.ToString();
+                }
+                else
+                {
+                    secondNumber = 0;
+                    lblVisor.Text = "0";
+                }
+            }
+
         }
 
         bool firstNumberActive = true;
