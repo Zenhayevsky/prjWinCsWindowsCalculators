@@ -20,6 +20,8 @@ namespace prjWinCsWindowsCalculators
         double firstNumber, secondNumber, result;
         bool adittion, substraction, multiplication, division, porcentage, secondNumberActive, resultActive;
 
+        bool firstNumberActive = true;
+        string number;
         private void btntwo_Click(object sender, EventArgs e)
         {
             insertNumber("2");
@@ -280,8 +282,21 @@ namespace prjWinCsWindowsCalculators
 
         }
 
-        bool firstNumberActive = true;
-        string number;
+        private void btnPlusToMinus_Click(object sender, EventArgs e)
+        {
+            if (firstNumberActive)
+            {
+                firstNumber = firstNumber * (-1);
+                lblVisor.Text = firstNumber.ToString();
+
+            }
+            if (secondNumberActive)
+            {
+                secondNumber = secondNumber * (-1);
+                lblVisor.Text = secondNumber.ToString();
+
+            }
+        }
 
         private void insertNumber(string numberToAdd)
         {
@@ -322,8 +337,7 @@ namespace prjWinCsWindowsCalculators
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //made all borders of buttons size 0. You can se the code in the file frmSimpleCalculator.Designer.cs
-            //website font :https://www.reddit.com/r/csharp/comments/kfw7op/how_to_change_the_border_style_in_c_forms_with/?tl=pt-br
+
         }
 
         private void button7_Click(object sender, EventArgs e)

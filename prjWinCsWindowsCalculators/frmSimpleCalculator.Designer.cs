@@ -332,6 +332,7 @@ namespace prjWinCsWindowsCalculators
             this.btnPlusToMinus.TabIndex = 77;
             this.btnPlusToMinus.Text = "+/-";
             this.btnPlusToMinus.UseVisualStyleBackColor = false;
+            this.btnPlusToMinus.Click += new System.EventHandler(this.btnPlusToMinus_Click);
             // 
             // btnOne
             // 
