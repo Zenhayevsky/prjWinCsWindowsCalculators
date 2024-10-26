@@ -18,7 +18,7 @@ namespace prjWinCsWindowsCalculators
         }
 
         double firstNumber, secondNumber, result;
-        bool adittion, substraction, multiplication, division, porcentage, square, squareRoot, inverse, secondNumberActive, resultActive;
+        bool adittion, substraction, multiplication, division, porcentage, secondNumberActive, resultActive;
 
         private void btntwo_Click(object sender, EventArgs e)
         {
@@ -63,7 +63,7 @@ namespace prjWinCsWindowsCalculators
                 firstNumberActive = false;
                 secondNumberActive = true;
                 lblVisor.Text = "0";
-                lblOperation.Text = operation + firstNumber.ToString();
+                lblOperation.Text = firstNumber.ToString() + operation;
             }
             //  Case: we have first numebr setted and second number watting to be filled
             else if (firstNumberActive && secondNumber == 0)
@@ -71,23 +71,43 @@ namespace prjWinCsWindowsCalculators
                 firstNumberActive = false;
                 secondNumberActive = true;
                 lblVisor.Text = "0";
-                lblOperation.Text = operation + firstNumber.ToString();
+                lblOperation.Text = firstNumber.ToString() + operation;
             }
             // Case: we want to some*** more than just 2 numbers.
             // *** additioning or subtracting or multiplication or division, etc...
             else if (secondNumberActive && firstNumber != 0)
             {
-                firstNumber = firstNumber + secondNumber;
-                secondNumber = 0;
+
+                if (adittion)
+                {
+                    firstNumber = firstNumber + secondNumber;
+                }
+                else if (substraction)
+                {
+                    firstNumber = firstNumber - secondNumber;
+                }
+                else if (multiplication)
+                {
+                    firstNumber = firstNumber * secondNumber;
+                }
+                if (division)
+                {
+                    firstNumber = firstNumber / secondNumber;
+                }
+
                 lblVisor.Text = "0";
+                secondNumber = 0;
+                lblOperation.Text = firstNumber.ToString() + operation ;
+
             }
         }
 
         private void btnAdition_Click(object sender, EventArgs e)
         {
+
             operationToMake(" + ");
             adittion = true;
-            substraction = multiplication = division = porcentage = square = squareRoot = inverse = false;
+            substraction = multiplication = division = porcentage = false;
         }
 
         private void btnEqual_Click(object sender, EventArgs e)
@@ -109,23 +129,11 @@ namespace prjWinCsWindowsCalculators
             {
                 result = firstNumber / secondNumber;
             }
-            /*else if (square)
-            {
-                result = firstName^2;
-            }
-            else if (squareRoot)
-            {
-                result = firstNumer^(1/2);
-            }
-            else if (inverse)
-            {
-                result = 1 / firstNumber;
-            }*/
 
             lblVisor.Text = result.ToString();
             secondNumberActive = false;
             firstNumberActive = true;
-            lblOperation.Text = secondNumber.ToString() + lblOperation.Text;
+            lblOperation.Text =  lblOperation.Text + secondNumber.ToString();
 
         }
 
@@ -138,42 +146,77 @@ namespace prjWinCsWindowsCalculators
         {
             operationToMake(" - ");
             substraction = true;
-            adittion = multiplication = division = porcentage = square = squareRoot = inverse = false;
+            adittion = multiplication = division = porcentage = false;
+
         }
 
         private void btnMultiplication_Click(object sender, EventArgs e)
         {
             operationToMake(" * ");
             multiplication = true;
-            adittion = substraction = division = porcentage = square = squareRoot = inverse = false;
+            adittion = substraction = division = porcentage = false;
         }
 
         private void btnDivision_Click(object sender, EventArgs e)
         {
             operationToMake(" / ");
             division = true;
-            adittion = substraction = multiplication = porcentage = square = squareRoot = inverse = false;
+            adittion = substraction = multiplication = false;
         }
 
         private void btnSquareRoot_Click(object sender, EventArgs e)
         {
-            operationToMake(" ²√ ");
-            squareRoot = true;
-            adittion = substraction = multiplication = porcentage = square = division = inverse = false;
+            if (firstNumberActive)
+            {
+                firstNumber = Math.Sqrt(firstNumber);
+                lblOperation.Text = lblOperation.Text + firstNumber.ToString();
+                lblVisor.Text = firstNumber.ToString();
+
+            }
+            if (secondNumberActive)
+            {
+                secondNumber = Math.Sqrt(firstNumber);
+                lblOperation.Text = lblOperation.Text + secondNumber.ToString();
+                lblVisor.Text = secondNumber.ToString();
+
+            }
         }
 
         private void btnSquare_Click(object sender, EventArgs e)
         {
-            operationToMake(" x² ");
-            square = true;
-            adittion = substraction = multiplication = porcentage = squareRoot = division = inverse = false;
+
+            if(firstNumberActive)
+            {
+                firstNumber = firstNumber*firstNumber;
+                lblOperation.Text =  lblOperation.Text + firstNumber.ToString() ;
+                lblVisor.Text = firstNumber.ToString();
+
+            }
+            if(secondNumberActive)
+            {
+                secondNumber = secondNumber*secondNumber;
+                lblOperation.Text = lblOperation.Text + secondNumber.ToString();
+                lblVisor.Text = secondNumber.ToString();
+
+            }
         }
 
         private void btnInverse_Click(object sender, EventArgs e)
         {
-            operationToMake(" 1/ ");
-            inverse = true;
-            adittion = substraction = multiplication = porcentage = squareRoot = division = square = false;
+            if (firstNumberActive)
+            {
+                firstNumber = 1/firstNumber;
+                lblOperation.Text = lblOperation.Text + firstNumber.ToString();
+                lblVisor.Text = firstNumber.ToString();
+
+            }
+            if (secondNumberActive)
+            {
+                secondNumber = 1/secondNumber;
+                lblOperation.Text = lblOperation.Text + secondNumber.ToString() ;
+                lblVisor.Text = secondNumber.ToString();
+
+            }
         }
 
         private void btnC_Rese_Click(object sender, EventArgs e)
@@ -184,7 +227,7 @@ namespace prjWinCsWindowsCalculators
             firstNumberActive = true;
             result = 0;
             number = "0";
-            adittion = substraction = multiplication = porcentage = squareRoot = division = square = inverse = false;
+            adittion = substraction = multiplication = porcentage = false;
             lblVisor.Text = "0";
             lblOperation.Text = "";
         }

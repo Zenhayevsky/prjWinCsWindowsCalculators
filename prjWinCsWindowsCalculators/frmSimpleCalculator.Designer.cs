@@ -72,7 +72,7 @@ namespace prjWinCsWindowsCalculators
             this.btnEqual.FlatAppearance.BorderSize = 0;
             this.btnEqual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEqual.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEqual.Location = new System.Drawing.Point(403, 572);
+            this.btnEqual.Location = new System.Drawing.Point(402, 574);
             this.btnEqual.Name = "btnEqual";
             this.btnEqual.Size = new System.Drawing.Size(123, 67);
             this.btnEqual.TabIndex = 95;
@@ -87,7 +87,7 @@ namespace prjWinCsWindowsCalculators
             this.btnAdition.FlatAppearance.BorderSize = 0;
             this.btnAdition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdition.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdition.Location = new System.Drawing.Point(403, 502);
+            this.btnAdition.Location = new System.Drawing.Point(402, 504);
             this.btnAdition.Name = "btnAdition";
             this.btnAdition.Size = new System.Drawing.Size(123, 67);
             this.btnAdition.TabIndex = 94;
@@ -102,7 +102,7 @@ namespace prjWinCsWindowsCalculators
             this.btnSubstraction.FlatAppearance.BorderSize = 0;
             this.btnSubstraction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubstraction.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubstraction.Location = new System.Drawing.Point(403, 432);
+            this.btnSubstraction.Location = new System.Drawing.Point(402, 434);
             this.btnSubstraction.Name = "btnSubstraction";
             this.btnSubstraction.Size = new System.Drawing.Size(123, 67);
             this.btnSubstraction.TabIndex = 93;
@@ -117,7 +117,7 @@ namespace prjWinCsWindowsCalculators
             this.btnMultiplication.FlatAppearance.BorderSize = 0;
             this.btnMultiplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMultiplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMultiplication.Location = new System.Drawing.Point(403, 362);
+            this.btnMultiplication.Location = new System.Drawing.Point(402, 364);
             this.btnMultiplication.Name = "btnMultiplication";
             this.btnMultiplication.Size = new System.Drawing.Size(123, 67);
             this.btnMultiplication.TabIndex = 92;
@@ -132,7 +132,7 @@ namespace prjWinCsWindowsCalculators
             this.btnDivision.FlatAppearance.BorderSize = 0;
             this.btnDivision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDivision.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDivision.Location = new System.Drawing.Point(403, 292);
+            this.btnDivision.Location = new System.Drawing.Point(402, 294);
             this.btnDivision.Name = "btnDivision";
             this.btnDivision.Size = new System.Drawing.Size(123, 67);
             this.btnDivision.TabIndex = 91;
@@ -147,7 +147,7 @@ namespace prjWinCsWindowsCalculators
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(403, 222);
+            this.btnClear.Location = new System.Drawing.Point(402, 224);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(123, 67);
             this.btnClear.TabIndex = 90;
@@ -162,7 +162,7 @@ namespace prjWinCsWindowsCalculators
             this.btnDot.FlatAppearance.BorderSize = 0;
             this.btnDot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDot.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDot.Location = new System.Drawing.Point(277, 572);
+            this.btnDot.Location = new System.Drawing.Point(276, 574);
             this.btnDot.Name = "btnDot";
             this.btnDot.Size = new System.Drawing.Size(123, 67);
             this.btnDot.TabIndex = 89;
@@ -176,7 +176,7 @@ namespace prjWinCsWindowsCalculators
             this.btnThree.FlatAppearance.BorderSize = 0;
             this.btnThree.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThree.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThree.Location = new System.Drawing.Point(277, 502);
+            this.btnThree.Location = new System.Drawing.Point(276, 504);
             this.btnThree.Name = "btnThree";
             this.btnThree.Size = new System.Drawing.Size(123, 67);
             this.btnThree.TabIndex = 88;
@@ -191,7 +191,7 @@ namespace prjWinCsWindowsCalculators
             this.btnInverse.FlatAppearance.BorderSize = 0;
             this.btnInverse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInverse.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInverse.Location = new System.Drawing.Point(25, 292);
+            this.btnInverse.Location = new System.Drawing.Point(24, 294);
             this.btnInverse.Name = "btnInverse";
             this.btnInverse.Size = new System.Drawing.Size(123, 67);
             this.btnInverse.TabIndex = 87;
@@ -206,7 +206,7 @@ namespace prjWinCsWindowsCalculators
             this.btSquare.FlatAppearance.BorderSize = 0;
             this.btSquare.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSquare.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSquare.Location = new System.Drawing.Point(151, 292);
+            this.btSquare.Location = new System.Drawing.Point(150, 294);
             this.btSquare.Name = "btSquare";
             this.btSquare.Size = new System.Drawing.Size(123, 67);
             this.btSquare.TabIndex = 86;
@@ -221,7 +221,7 @@ namespace prjWinCsWindowsCalculators
             this.btnSquareRoot.FlatAppearance.BorderSize = 0;
             this.btnSquareRoot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSquareRoot.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSquareRoot.Location = new System.Drawing.Point(277, 292);
+            this.btnSquareRoot.Location = new System.Drawing.Point(276, 294);
             this.btnSquareRoot.Name = "btnSquareRoot";
             this.btnSquareRoot.Size = new System.Drawing.Size(123, 67);
             this.btnSquareRoot.TabIndex = 85;
@@ -236,7 +236,7 @@ namespace prjWinCsWindowsCalculators
             this.btnZero.FlatAppearance.BorderSize = 0;
             this.btnZero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnZero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnZero.Location = new System.Drawing.Point(151, 572);
+            this.btnZero.Location = new System.Drawing.Point(150, 574);
             this.btnZero.Name = "btnZero";
             this.btnZero.Size = new System.Drawing.Size(123, 67);
             this.btnZero.TabIndex = 83;
@@ -251,7 +251,7 @@ namespace prjWinCsWindowsCalculators
             this.btntwo.FlatAppearance.BorderSize = 0;
             this.btntwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btntwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btntwo.Location = new System.Drawing.Point(151, 502);
+            this.btntwo.Location = new System.Drawing.Point(150, 504);
             this.btntwo.Name = "btntwo";
             this.btntwo.Size = new System.Drawing.Size(123, 67);
             this.btntwo.TabIndex = 82;
@@ -266,7 +266,7 @@ namespace prjWinCsWindowsCalculators
             this.btnFive.FlatAppearance.BorderSize = 0;
             this.btnFive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFive.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFive.Location = new System.Drawing.Point(151, 432);
+            this.btnFive.Location = new System.Drawing.Point(150, 434);
             this.btnFive.Name = "btnFive";
             this.btnFive.Size = new System.Drawing.Size(123, 67);
             this.btnFive.TabIndex = 81;
@@ -281,7 +281,7 @@ namespace prjWinCsWindowsCalculators
             this.btnEigth.FlatAppearance.BorderSize = 0;
             this.btnEigth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEigth.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEigth.Location = new System.Drawing.Point(151, 362);
+            this.btnEigth.Location = new System.Drawing.Point(150, 364);
             this.btnEigth.Name = "btnEigth";
             this.btnEigth.Size = new System.Drawing.Size(123, 67);
             this.btnEigth.TabIndex = 80;
@@ -296,7 +296,7 @@ namespace prjWinCsWindowsCalculators
             this.btnSeven.FlatAppearance.BorderSize = 0;
             this.btnSeven.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeven.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSeven.Location = new System.Drawing.Point(25, 362);
+            this.btnSeven.Location = new System.Drawing.Point(24, 364);
             this.btnSeven.Name = "btnSeven";
             this.btnSeven.Size = new System.Drawing.Size(123, 67);
             this.btnSeven.TabIndex = 79;
@@ -311,7 +311,7 @@ namespace prjWinCsWindowsCalculators
             this.btnCE.FlatAppearance.BorderSize = 0;
             this.btnCE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCE.Location = new System.Drawing.Point(151, 222);
+            this.btnCE.Location = new System.Drawing.Point(150, 224);
             this.btnCE.Name = "btnCE";
             this.btnCE.Size = new System.Drawing.Size(123, 67);
             this.btnCE.TabIndex = 78;
@@ -326,7 +326,7 @@ namespace prjWinCsWindowsCalculators
             this.btnPlusToMinus.FlatAppearance.BorderSize = 0;
             this.btnPlusToMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlusToMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlusToMinus.Location = new System.Drawing.Point(25, 572);
+            this.btnPlusToMinus.Location = new System.Drawing.Point(24, 574);
             this.btnPlusToMinus.Name = "btnPlusToMinus";
             this.btnPlusToMinus.Size = new System.Drawing.Size(123, 67);
             this.btnPlusToMinus.TabIndex = 77;
@@ -340,7 +340,7 @@ namespace prjWinCsWindowsCalculators
             this.btnOne.FlatAppearance.BorderSize = 0;
             this.btnOne.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOne.Location = new System.Drawing.Point(25, 502);
+            this.btnOne.Location = new System.Drawing.Point(24, 504);
             this.btnOne.Name = "btnOne";
             this.btnOne.Size = new System.Drawing.Size(123, 67);
             this.btnOne.TabIndex = 76;
@@ -355,7 +355,7 @@ namespace prjWinCsWindowsCalculators
             this.btnFour.FlatAppearance.BorderSize = 0;
             this.btnFour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFour.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFour.Location = new System.Drawing.Point(25, 432);
+            this.btnFour.Location = new System.Drawing.Point(24, 434);
             this.btnFour.Name = "btnFour";
             this.btnFour.Size = new System.Drawing.Size(123, 67);
             this.btnFour.TabIndex = 75;
@@ -370,7 +370,7 @@ namespace prjWinCsWindowsCalculators
             this.btnNine.FlatAppearance.BorderSize = 0;
             this.btnNine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNine.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNine.Location = new System.Drawing.Point(277, 362);
+            this.btnNine.Location = new System.Drawing.Point(276, 364);
             this.btnNine.Name = "btnNine";
             this.btnNine.Size = new System.Drawing.Size(123, 67);
             this.btnNine.TabIndex = 74;
@@ -385,7 +385,7 @@ namespace prjWinCsWindowsCalculators
             this.btnSix.FlatAppearance.BorderSize = 0;
             this.btnSix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSix.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSix.Location = new System.Drawing.Point(277, 432);
+            this.btnSix.Location = new System.Drawing.Point(276, 434);
             this.btnSix.Name = "btnSix";
             this.btnSix.Size = new System.Drawing.Size(123, 67);
             this.btnSix.TabIndex = 73;
@@ -401,7 +401,7 @@ namespace prjWinCsWindowsCalculators
             this.btnPorcent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPorcent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPorcent.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPorcent.Location = new System.Drawing.Point(25, 222);
+            this.btnPorcent.Location = new System.Drawing.Point(24, 224);
             this.btnPorcent.Name = "btnPorcent";
             this.btnPorcent.Size = new System.Drawing.Size(123, 67);
             this.btnPorcent.TabIndex = 72;
@@ -413,7 +413,7 @@ namespace prjWinCsWindowsCalculators
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(113, 185);
+            this.label7.Location = new System.Drawing.Point(112, 187);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(35, 20);
             this.label7.TabIndex = 71;
@@ -423,7 +423,7 @@ namespace prjWinCsWindowsCalculators
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(207, 185);
+            this.label6.Location = new System.Drawing.Point(206, 187);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(33, 20);
             this.label6.TabIndex = 70;
@@ -433,7 +433,7 @@ namespace prjWinCsWindowsCalculators
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(300, 185);
+            this.label5.Location = new System.Drawing.Point(299, 187);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(29, 20);
             this.label5.TabIndex = 69;
@@ -443,7 +443,7 @@ namespace prjWinCsWindowsCalculators
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(399, 185);
+            this.label4.Location = new System.Drawing.Point(398, 187);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(34, 20);
             this.label4.TabIndex = 68;
@@ -453,7 +453,7 @@ namespace prjWinCsWindowsCalculators
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(493, 185);
+            this.label3.Location = new System.Drawing.Point(492, 187);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(33, 20);
             this.label3.TabIndex = 67;
@@ -463,7 +463,7 @@ namespace prjWinCsWindowsCalculators
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 185);
+            this.label2.Location = new System.Drawing.Point(20, 187);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 20);
             this.label2.TabIndex = 66;
@@ -483,7 +483,7 @@ namespace prjWinCsWindowsCalculators
             // lblVisor
             // 
             this.lblVisor.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVisor.Location = new System.Drawing.Point(23, 92);
+            this.lblVisor.Location = new System.Drawing.Point(39, 94);
             this.lblVisor.Name = "lblVisor";
             this.lblVisor.Size = new System.Drawing.Size(503, 63);
             this.lblVisor.TabIndex = 96;
@@ -495,12 +495,13 @@ namespace prjWinCsWindowsCalculators
             // 
             this.lblOperation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOperation.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblOperation.Location = new System.Drawing.Point(25, 57);
+            this.lblOperation.Location = new System.Drawing.Point(11, 59);
             this.lblOperation.Name = "lblOperation";
             this.lblOperation.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.lblOperation.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblOperation.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblOperation.Size = new System.Drawing.Size(501, 35);
             this.lblOperation.TabIndex = 97;
+            this.lblOperation.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblOperation.Click += new System.EventHandler(this.lblOperation_Click);
             // 
             // btnC_Reset
@@ -510,7 +511,7 @@ namespace prjWinCsWindowsCalculators
             this.btnC_Reset.FlatAppearance.BorderSize = 0;
             this.btnC_Reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnC_Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnC_Reset.Location = new System.Drawing.Point(277, 222);
+            this.btnC_Reset.Location = new System.Drawing.Point(276, 224);
             this.btnC_Reset.Name = "btnC_Reset";
             this.btnC_Reset.Size = new System.Drawing.Size(123, 67);
             this.btnC_Reset.TabIndex = 98;
@@ -523,7 +524,7 @@ namespace prjWinCsWindowsCalculators
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(545, 646);
+            this.ClientSize = new System.Drawing.Size(545, 664);
             this.Controls.Add(this.btnC_Reset);
             this.Controls.Add(this.lblOperation);
             this.Controls.Add(this.lblVisor);
