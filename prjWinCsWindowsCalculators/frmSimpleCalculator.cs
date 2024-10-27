@@ -283,6 +283,20 @@ namespace prjWinCsWindowsCalculators
 
         }
 
+        private void btnClearLastCE_Click(object sender, EventArgs e)
+        {
+            if (firstNumberActive)
+            {
+                firstNumber = 0;
+                lblVisor.Text = "0";
+            }
+            else
+            {
+                secondNumber = 0;
+                lblVisor.Text = "0";
+            }
+        }
+
         private void btnPlusToMinus_Click(object sender, EventArgs e)
         {
             if (firstNumberActive)
@@ -299,31 +313,67 @@ namespace prjWinCsWindowsCalculators
             }
         }
 
+        private void btnDot_Click(object sender, EventArgs e)
+        {
+            if (firstNumberActive && !lblVisor.Text.Contains("."))
+            {
+                lblVisor.Text = firstNumber.ToString() + ".";
+            }
+            else if (secondNumberActive && !lblVisor.Text.Contains("."))
+            {
+                lblVisor.Text = secondNumber.ToString() + ".";
+            }
+        }
+
         private void insertNumber(string numberToAdd)
         {
+            //Case: time to insert first number and no number has been inserted before.
             if (firstNumberActive && double.Parse(lblVisor.Text) == 0)
             {
                 firstNumber = double.Parse(numberToAdd);
                 lblVisor.Text = numberToAdd;
 
             }
+            //Case: time to insert the firstnumber but there is already a firstnumber started
             else if (firstNumberActive && double.Parse(lblVisor.Text) != 0)
             {
-                number = firstNumber.ToString() + numberToAdd;
-                firstNumber = double.Parse(number);
-                lblVisor.Text = number;
+                if (lblVisor.Text.Contains("."))
+                {
+                    number = firstNumber.ToString() + "." + numberToAdd;
+                    firstNumber = double.Parse(number);
+                    lblVisor.Text = number;
+
+                }
+                else
+                {
+                    number = firstNumber.ToString() + numberToAdd;
+                    firstNumber = double.Parse(number);
+                    lblVisor.Text = number;
+                }
 
             }
+            //Time to insert second number and no number has been inserted to start it
             else if (secondNumberActive && double.Parse(lblVisor.Text) == 0)
             {
                 secondNumber = double.Parse(numberToAdd);
                 lblVisor.Text = numberToAdd;
             }
+            //Case: time to insert the firstnumber but there is already a firstnumber started
             else if (secondNumberActive && double.Parse(lblVisor.Text) != 0)
             {
-                number = secondNumber.ToString() + numberToAdd;
-                secondNumber = double.Parse(number);
-                lblVisor.Text = number;
+                if (lblVisor.Text.Contains("."))
+                {
+                    number = secondNumber.ToString() + "." + numberToAdd;
+                    secondNumber = double.Parse(number);
+                    lblVisor.Text = number;
+
+                }
+                else
+                {
+                    number = secondNumber.ToString() + numberToAdd;
+                    secondNumber = double.Parse(number);
+                    lblVisor.Text = number;
+                }
             }
         }
         private void label8_Click(object sender, EventArgs e)
@@ -355,16 +405,6 @@ namespace prjWinCsWindowsCalculators
                 secondNumber = secondNumber/100;
                 lblVisor.Text = secondNumber.ToString();
             }
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button13_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button8_Click(object sender, EventArgs e)

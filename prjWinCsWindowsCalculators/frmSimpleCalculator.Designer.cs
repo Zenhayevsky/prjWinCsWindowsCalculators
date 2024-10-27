@@ -46,7 +46,6 @@ namespace prjWinCsWindowsCalculators
             this.btnFive = new System.Windows.Forms.Button();
             this.btnEigth = new System.Windows.Forms.Button();
             this.btnSeven = new System.Windows.Forms.Button();
-            this.btnCE = new System.Windows.Forms.Button();
             this.btnPlusToMinus = new System.Windows.Forms.Button();
             this.btnOne = new System.Windows.Forms.Button();
             this.btnFour = new System.Windows.Forms.Button();
@@ -63,6 +62,7 @@ namespace prjWinCsWindowsCalculators
             this.lblVisor = new System.Windows.Forms.Label();
             this.lblOperation = new System.Windows.Forms.Label();
             this.btnC_Reset = new System.Windows.Forms.Button();
+            this.btnClearLastCE = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnEqual
@@ -168,6 +168,7 @@ namespace prjWinCsWindowsCalculators
             this.btnDot.TabIndex = 89;
             this.btnDot.Text = ".";
             this.btnDot.UseVisualStyleBackColor = false;
+            this.btnDot.Click += new System.EventHandler(this.btnDot_Click);
             // 
             // btnThree
             // 
@@ -303,21 +304,6 @@ namespace prjWinCsWindowsCalculators
             this.btnSeven.Text = "7";
             this.btnSeven.UseVisualStyleBackColor = false;
             this.btnSeven.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // btnCE
-            // 
-            this.btnCE.BackColor = System.Drawing.Color.LightGray;
-            this.btnCE.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCE.FlatAppearance.BorderSize = 0;
-            this.btnCE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCE.Location = new System.Drawing.Point(150, 224);
-            this.btnCE.Name = "btnCE";
-            this.btnCE.Size = new System.Drawing.Size(123, 67);
-            this.btnCE.TabIndex = 78;
-            this.btnCE.Text = "CE";
-            this.btnCE.UseVisualStyleBackColor = false;
-            this.btnCE.Click += new System.EventHandler(this.button7_Click);
             // 
             // btnPlusToMinus
             // 
@@ -520,12 +506,28 @@ namespace prjWinCsWindowsCalculators
             this.btnC_Reset.UseVisualStyleBackColor = false;
             this.btnC_Reset.Click += new System.EventHandler(this.btnC_Rese_Click);
             // 
+            // btnClearLastCE
+            // 
+            this.btnClearLastCE.BackColor = System.Drawing.Color.LightGray;
+            this.btnClearLastCE.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClearLastCE.FlatAppearance.BorderSize = 0;
+            this.btnClearLastCE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearLastCE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearLastCE.Location = new System.Drawing.Point(150, 224);
+            this.btnClearLastCE.Name = "btnClearLastCE";
+            this.btnClearLastCE.Size = new System.Drawing.Size(123, 67);
+            this.btnClearLastCE.TabIndex = 99;
+            this.btnClearLastCE.Text = "CE";
+            this.btnClearLastCE.UseVisualStyleBackColor = false;
+            this.btnClearLastCE.Click += new System.EventHandler(this.btnClearLastCE_Click);
+            // 
             // frmSimpleCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(545, 664);
+            this.Controls.Add(this.btnClearLastCE);
             this.Controls.Add(this.btnC_Reset);
             this.Controls.Add(this.lblOperation);
             this.Controls.Add(this.lblVisor);
@@ -545,7 +547,6 @@ namespace prjWinCsWindowsCalculators
             this.Controls.Add(this.btnFive);
             this.Controls.Add(this.btnEigth);
             this.Controls.Add(this.btnSeven);
-            this.Controls.Add(this.btnCE);
             this.Controls.Add(this.btnPlusToMinus);
             this.Controls.Add(this.btnOne);
             this.Controls.Add(this.btnFour);
@@ -584,7 +585,6 @@ namespace prjWinCsWindowsCalculators
         private System.Windows.Forms.Button btnFive;
         private System.Windows.Forms.Button btnEigth;
         private System.Windows.Forms.Button btnSeven;
-        private System.Windows.Forms.Button btnCE;
         private System.Windows.Forms.Button btnPlusToMinus;
         private System.Windows.Forms.Button btnOne;
         private System.Windows.Forms.Button btnFour;
@@ -601,5 +601,6 @@ namespace prjWinCsWindowsCalculators
         private Label lblVisor;
         private Label lblOperation;
         private Button btnC_Reset;
+        private Button btnClearLastCE;
     }
 }
