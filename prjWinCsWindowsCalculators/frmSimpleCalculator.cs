@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -52,7 +53,7 @@ namespace prjWinCsWindowsCalculators
             insertNumber("9");
         }
 
-        private void operationToMake (String operation)
+        private void operationToMake(String operation)
         {
             //Case: We already operated an operation before (pressed btnResult) so, seconNumber is filled and now, we want to continue the
             //operation *** additioning or subtracting or multiplication or division, etc...*** 
@@ -99,7 +100,7 @@ namespace prjWinCsWindowsCalculators
 
                 lblVisor.Text = "0";
                 secondNumber = 0;
-                lblOperation.Text = firstNumber.ToString() + operation ;
+                lblOperation.Text = firstNumber.ToString() + operation;
 
             }
         }
@@ -135,7 +136,7 @@ namespace prjWinCsWindowsCalculators
             lblVisor.Text = result.ToString();
             secondNumberActive = false;
             firstNumberActive = true;
-            lblOperation.Text =  lblOperation.Text + secondNumber.ToString();
+            lblOperation.Text = lblOperation.Text + secondNumber.ToString();
 
         }
 
@@ -187,16 +188,16 @@ namespace prjWinCsWindowsCalculators
         private void btnSquare_Click(object sender, EventArgs e)
         {
 
-            if(firstNumberActive)
+            if (firstNumberActive)
             {
-                firstNumber = firstNumber*firstNumber;
-                lblOperation.Text =  lblOperation.Text + firstNumber.ToString() ;
+                firstNumber = firstNumber * firstNumber;
+                lblOperation.Text = lblOperation.Text + firstNumber.ToString();
                 lblVisor.Text = firstNumber.ToString();
 
             }
-            if(secondNumberActive)
+            if (secondNumberActive)
             {
-                secondNumber = secondNumber*secondNumber;
+                secondNumber = secondNumber * secondNumber;
                 lblOperation.Text = lblOperation.Text + secondNumber.ToString();
                 lblVisor.Text = secondNumber.ToString();
 
@@ -207,15 +208,15 @@ namespace prjWinCsWindowsCalculators
         {
             if (firstNumberActive)
             {
-                firstNumber = 1/firstNumber;
+                firstNumber = 1 / firstNumber;
                 lblOperation.Text = lblOperation.Text + firstNumber.ToString();
                 lblVisor.Text = firstNumber.ToString();
 
             }
             if (secondNumberActive)
             {
-                secondNumber = 1/secondNumber;
-                lblOperation.Text = lblOperation.Text + secondNumber.ToString() ;
+                secondNumber = 1 / secondNumber;
+                lblOperation.Text = lblOperation.Text + secondNumber.ToString();
                 lblVisor.Text = secondNumber.ToString();
 
             }
@@ -337,7 +338,23 @@ namespace prjWinCsWindowsCalculators
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (firstNumberActive)
+            {
+                firstNumber = 0;
+                lblVisor.Text = "0";
+                lblOperation.Text = "0";
 
+            }
+            else if (secondNumberActive && (adittion || substraction))
+            {
+                secondNumber = firstNumber * secondNumber / 100;
+                lblVisor.Text = secondNumber.ToString();
+            }
+            else if(secondNumberActive && (division || multiplication))
+            {
+                secondNumber = secondNumber/100;
+                lblVisor.Text = secondNumber.ToString();
+            }
         }
 
         private void button7_Click(object sender, EventArgs e)
