@@ -46,5 +46,44 @@ namespace prjWinCsWindowsCalculators
         {
 
         }
+
+        private void calculatorsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void calculatoreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mnuStandartCal_Click(object sender, EventArgs e)
+        {
+            frmSimpleCalculator fo = new frmSimpleCalculator();
+            fo.MdiParent = this;
+            fo.Show();
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mnuQuitProgram_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void manualToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aProposToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAbout fo = new frmAbout();
+            fo.MdiParent = this;
+            fo.Show();
+        }
     }
 }

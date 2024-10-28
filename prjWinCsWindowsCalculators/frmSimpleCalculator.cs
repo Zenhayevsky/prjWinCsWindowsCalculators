@@ -107,15 +107,17 @@ namespace prjWinCsWindowsCalculators
 
         private void btnAdition_Click(object sender, EventArgs e)
         {
-
+            //setting the visor and preparing the program to recive the second number
             operationToMake(" + ");
+            //setting the opperation to make when pressed the equal button
             adittion = true;
+            //making sure all the others booleans that indicate opperations, are turned into False
             substraction = multiplication = division = porcentage = false;
         }
 
         private void btnEqual_Click(object sender, EventArgs e)
         {
-
+            //chosing the operation to make
             if (adittion)
             {
                 result = firstNumber + secondNumber;
@@ -295,6 +297,11 @@ namespace prjWinCsWindowsCalculators
                 secondNumber = 0;
                 lblVisor.Text = "0";
             }
+        }
+
+        private void frmSimpleCalculator_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void btnPlusToMinus_Click(object sender, EventArgs e)

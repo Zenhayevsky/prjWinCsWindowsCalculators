@@ -562,6 +562,7 @@ namespace prjWinCsWindowsCalculators
             this.Controls.Add(this.label1);
             this.Name = "frmSimpleCalculator";
             this.Text = "frmSimpleCalculator";
+            this.Load += new System.EventHandler(this.frmSimpleCalculator_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

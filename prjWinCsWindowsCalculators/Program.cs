@@ -16,7 +16,7 @@ namespace prjWinCsWindowsCalculators
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmSimpleCalculator());
+            Application.Run(new main());
         }
     }
 }

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSimpleCalculator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmSimpleCalculator.resx">
       <DependentUpon>frmSimpleCalculator.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,7 +99,43 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Include="Resources\dollarsign.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dolar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar_sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dolar_sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user manual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroupPhoto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundPhotoCalcu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculatorProfessor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonsProfessor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollarPorfessor.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
